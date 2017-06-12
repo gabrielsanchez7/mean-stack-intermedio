@@ -1,0 +1,22 @@
+<div class="favorito-box">
+	<h1>{{titleSection}}</h1>
+
+	<form id="add-favorito" #formFavoritos="ngForm" (ngSubmit)="onSubmit()">
+		<label>Título:</label>
+		<input type="text" name="title" #title="ngModel" [(ngModel)]="favorito.title" required>
+		<span *ngIf="title.touched && !title.valid">El título no es correcto.</span>
+		<br>
+
+		<label>Descripción:</label>
+		<textarea type="text" name="description" #description="ngModel" [(ngModel)]="favorito.description" required></textarea>
+		<span *ngIf="description.touched && !description.valid">La descripción no es correcta.</span>
+		<br>
+
+		<label>Url:</label>
+		<input type="url" name="url" #url="ngModel" [(ngModel)]="favorito.url" required>
+		<span *ngIf="url.touched && !url.valid">La url no es correcta.</span>
+		<br>
+
+		<input type="submit" value="{{titleSection}}" class="btn btn-form">
+	</form>
+</div>

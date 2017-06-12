@@ -1,0 +1,206 @@
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+	text-decoration: none;
+	list-style: none;
+}
+
+#content {
+	width: 80%;
+	min-height: 500px;
+	margin: 20px auto 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ddd;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+}
+
+#header {
+	padding: 15px;
+	background-color: #229138;
+	display: flex;
+	justify-content: space-between;
+}
+
+#header h1 {
+	/*text-transform: uppercase;*/
+	margin-bottom: 5px;
+	color: #fff;
+}
+
+#header h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#header p {
+	color: #ddd;
+}
+
+#header .img-title {
+	display: flex;
+	align-items: center;
+}
+
+#header img {
+	height: 65px;
+	margin-right: 10px;
+}
+
+.btn-add-favorito {
+	float: right;
+	display: block;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #666;
+	transition: 0.3s;
+	box-shadow: 0 0 5px gray;
+	text-decoration: none;
+	max-height: 20px;
+	line-height: 20px;
+}
+
+.btn-add-favorito:hover {
+	background-color: #fff;
+}
+
+#favoritos-list {
+	list-style: none;
+	float: left;
+	padding: 20px;
+	color: gray;
+	position: relative;
+	margin-top: 0;
+}
+
+.favorito-item {
+	height: 180px;
+	position: relative;
+	width: 31%;
+	margin: 10px;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.favorito-item h4 {
+	margin: 0;
+}
+
+.favorito-item .url {
+	font-size: 14px;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 20px;
+}
+
+.btn {
+	font-size: 12px;
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #1976D2;
+	box-shadow: 0 0 5px #ddd;
+	padding: 5px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0074d9;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.btn-editar {
+	background-color: #2E6F2E;
+	border-color: #41531D;
+}
+
+.btn-eliminar {
+	background-color: #e23237;
+	border-color: #f54747;
+}
+
+.btn-default {
+	background-color: #eaa615;
+	border-color: #cc941c;
+}
+
+.btn-form {
+	background-color: #B5B5B5;
+	border-color: #757575;
+	margin: 20px 0;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.btn-form:hover {
+	background-color: #757575;
+}
+
+.favorito-box {
+	display: block;
+	box-sizing: border-box;
+	margin: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	min-height: 200px;
+}
+
+.loading {
+	position: absolute;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.78);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.loading img {
+	position: absolute;
+	left: calc(50% - 15px);
+	top: 20%;
+}
+
+#add-favorito label {
+	display: block;
+	width: 150px;
+	margin-bottom: 15px;
+}
+
+#add-favorito input:not([type="submit"]),
+#add-favorito textarea {
+	display: inline-block;
+	width: 300px;
+	line-height: 25px;
+	padding: 0 5px;
+	margin-bottom: 20px;
+}
+
+.seguro {
+	position: absolute;
+    font-size: 12px;
+    bottom: 10px;
+    background: #fff;
+    width: 80%;
+    height: 65px;
+}
+
+footer {
+	width: 80%;
+	margin: 0 auto;
+	color: gray;
+	margin-top: 10px;
+	font-size: 14px;
+}
